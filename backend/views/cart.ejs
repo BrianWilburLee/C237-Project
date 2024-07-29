@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <% cartItems.forEach(function(item) { %>
+            <tr>
+                <td><%= item.name %></td>
+                <td><%= item.description %></td>
+                <td><%= item.price %></td>
+                <td><%= item.quantity %></td>
+                <td><%= item.price * item.quantity %></td>
+            </tr>
+        <% }); %>
+    </table>
+    <a href="/checkout">Proceed to Checkout</a>
+</body>
+</html>

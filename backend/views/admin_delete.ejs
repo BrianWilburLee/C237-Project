@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Product</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Remove Product</h1>
+    <form action="/admin/delete/<%= product.id %>" method="POST">
+        <h2>Are you sure you want to remove the product <%= product.name %>?</h2>
+        <button type="submit">Remove Product</button>
+    </form>
+    <a href="/admin">Back to Admin Dashboard</a>
+</body>
+</html>

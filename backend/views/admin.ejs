@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <a href="/admin/add">Add New Product</a>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+        <% products.forEach(function(product) { %>
+            <tr>
+                <td><%= product.name %></td>
+                <td><%= product.description %></td>
+                <td><%= product.price %></td>
+                <td><%= product.image %></td>
+                <td><%= product.quantity %></td>
+                <td>
+                    <a href="/admin/edit/<%= product.id %>">Edit</a>
+                    <a href="/admin/delete/<%= product.id %>">Delete</a>
+                </td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
