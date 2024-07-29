@@ -16,10 +16,10 @@ const db = mysql.createConnection({
   //user: 'root',
   //password: '',
   //database: 'eco_shop'
-  host: 'sql.freedb.tech',
-  user: 'freedb_Brian' ,
-  password: 'E$pv786CEgzV38r', 
-  database: 'freedb_eco_shop',
+  host: 'pro.freedb.tech',
+  user: 'qwerty' ,
+  password: 'NSb@v5v4BN%7N4n', 
+  database: 'qwerty',
 });
 
 db.connect((err) => {
