@@ -16,7 +16,7 @@ const db = mysql.createConnection({
   //user: 'root',
   //password: '',
   //database: 'eco_shop'
-  host: 'sql.freeb.tech',
+  host: 'sql.freedb.tech',
   user: 'freedb_Brian' ,
   password: 'E$pv786CEgzV38r', 
   database: 'freedb_eco_shop',
