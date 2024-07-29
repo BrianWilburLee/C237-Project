@@ -12,10 +12,14 @@ app.set('view engine', 'ejs');
 
 // Database connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'eco_shop'
+  //host: 'localhost',
+  //user: 'root',
+  //password: '',
+  //database: 'eco_shop'
+  host: 'sql.freeb.tech',
+  user: 'freedb_Brian' ,
+  password: 'E$pv786CEgzV38r', 
+  database: 'freedb_eco_shop',
 });
 
 db.connect((err) => {
@@ -203,6 +207,6 @@ app.get('/admin/delete/:id', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3306, () => {
+  console.log('Server is running on port 3306');
 });
